@@ -1,0 +1,24 @@
+2024-04-04 14:37:31.154 [INFO] com.bugapi.BugTrackingSystemApplication [restartedMain] Starting BugTrackingSystemApplication using Java 17.0.4.1 with PID 38580 (C:\Users\skundana\Downloads\Bug-Tracking-system\Bug-Tracking-system\target\classes started by skundana in C:\Users\skundana\Downloads\Bug-Tracking-system\Bug-Tracking-system)
+2024-04-04 14:37:31.173 [INFO] com.bugapi.BugTrackingSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-04-04 14:37:31.245 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-04 14:37:31.246 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-04 14:37:32.062 [WARN] org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] No MyBatis mapper was found in '[com.bugapi.mapper]' package. Please check your configuration.
+2024-04-04 14:37:32.393 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-04 14:37:32.483 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2024-04-04 14:37:33.467 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-04-04 14:37:33.486 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-04-04 14:37:33.487 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-04-04 14:37:33.594 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-04-04 14:37:33.594 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2347 ms
+2024-04-04 14:37:33.859 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-04 14:37:33.975 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-04-04 14:37:34.041 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-04-04 14:37:34.432 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-04 14:37:34.469 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-04-04 14:37:34.783 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24765910
+2024-04-04 14:37:34.786 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-04-04 14:37:36.069 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-04 14:37:36.157 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-04 14:37:37.505 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-04-04 14:37:37.594 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2024-04-04 14:37:37.610 [INFO] com.bugapi.BugTrackingSystemApplication [restartedMain] Started BugTrackingSystemApplication in 7.021 seconds (process running for 7.714)
