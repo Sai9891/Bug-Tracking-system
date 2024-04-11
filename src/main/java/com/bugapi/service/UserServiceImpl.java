@@ -53,15 +53,25 @@ public class UserServiceImpl implements UserService{
 	            .orElseThrow(() -> new ResourceNotFoundException("Employee not found with ID: " + userId));
 	}
 
-	@Override
-    public UserDTO getUserByEmail(String email) throws ResourceNotFoundException {
-        User user = userRepository.findByEmailId(email);
-        if (user == null) {
-            throw new ResourceNotFoundException("User not found with email: " + email);
-        }
-        return mapUserToDTO(user);
-    }
+//	@Override
+//    public UserDTO getUserByEmail(String email) throws ResourceNotFoundException {
+//        User user = userRepository.findByEmailId(email);
+//        if (user == null) {
+//            throw new ResourceNotFoundException("User not found with email: " + email);
+//        }
+//        return mapUserToDTO(user);
+//    }
+//	
 	
+	@Override
+	public UserDTO getUserByEmail(String email) {
+	    User user = userRepository.findByEmailId(email);
+	    if (user == null) {
+	        return null; // User not found
+	    }
+	    return mapUserToDTO(user);
+	}
+
 	@Override
     public List<UserDTO> getAllUsers() {
         List<User> users = userRepository.findAll();

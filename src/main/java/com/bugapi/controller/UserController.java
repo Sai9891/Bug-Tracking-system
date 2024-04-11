@@ -72,15 +72,20 @@ public class UserController {
     }
     
     
-    //get by id
     @GetMapping("/email/{email}")
-    public ResponseEntity<UserDTO> getUserByEmail(@PathVariable String email) {
-        try {
-            UserDTO userDTO = userService.getUserByEmail(email);
-            return ResponseEntity.ok(userDTO);
-        } catch (ResourceNotFoundException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+    public ResponseEntity<Object> getUserByEmail(@Validated @PathVariable String email) throws ResourceNotFoundException {
+        // Validate email format using annotations from DTO
+        if (email == null) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Email ID cannot be blank");
         }
+
+        // Proceed to retrieve user by email from the service layer
+        UserDTO userDTO = userService.getUserByEmail(email);
+        if (userDTO == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found with email: " + email);
+        }
+
+        return ResponseEntity.ok(userDTO);
     }
     
     @GetMapping("/getAll")
